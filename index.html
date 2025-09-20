@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Social Media Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">SocialDash</h1>
+            <button id="themeToggle">🌙</button>
+        </div>
+    </header>
+
+    <section class="stories container">
+        <h3>Stories</h3>
+        <div class="stories-container" id="storiesContainer"></div>
+    </section>
+
+    <section class="profile container">
+        <img src="images/avatar.png" alt="Avatar" class="avatar">
+        <h2 id="userName">Ramesh R</h2>
+        <p id="userBio">Full Stack Developer | Tech Enthusiast</p>
+        <button id="editProfile" class="btn-primary">Edit Profile</button>
+    </section>
+
+    <section class="create-post container">
+        <textarea id="postInput" placeholder="What's on your mind, Ramesh?"></textarea>
+        <button id="addPost" class="btn-primary">Post</button>
+    </section>
+
+    <section class="feed container" id="feed"></section>
+
+    <section class="notifications container" id="notifications">
+        <h3>Notifications</h3>
+        <ul id="notificationList"></ul>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
